@@ -7,9 +7,9 @@ memo.get('/', function (req, res) {
     res.send(data)
 })
 
-memo.post('/insert', function (req, res) {
-    data.push()
-    res.send()
+memo.post('/', function (req, res) {
+    data.push(req.body)
+    res.send(data)
 })
 
 
